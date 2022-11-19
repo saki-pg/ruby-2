@@ -3,9 +3,15 @@ loop do
  puts "じゃんけん..."
   
  def janken
-  puts "0(グー) 1(チョキ) 2(パー)"
+  puts "0(グー) 1(チョキ) 2(パー) 3(終了)"
   
   player_hand = gets.to_i
+  
+  if player_hand == 3
+    puts "終了"
+    exit
+  end
+  
   program_hand = rand(3)
   
   puts "ホイ！"
@@ -55,7 +61,7 @@ loop do
   if (player_head == 0 && program_head == 0)||(player_head == 1 && program_head == 1)||(player_head == 2 && program_head == 2)||(player_head == 3 && program_head == 3)
   exit
   else
-  
+    
   end
  end 
   
