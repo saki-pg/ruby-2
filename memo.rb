@@ -1,4 +1,4 @@
-999.times do
+loop do
 
  puts "じゃんけん..."
   
@@ -23,6 +23,7 @@
    return false
    
   else
+    
    puts "あなたの負けです"
    return false
   end
@@ -48,7 +49,14 @@
   direction = ["上","下","右","左"]
   puts "-----------"
   puts "あなた : #{direction[player_head]}\n相手 : #{direction[program_head]}"
-  puts "-----------" 
+  puts "-----------"
+  
+  
+  if (player_head == 0 && program_head == 0)||(player_head == 1 && program_head == 1)||(player_head == 2 && program_head == 2)||(player_head == 3 && program_head == 3)
+  exit
+  else
+  
+  end
  end 
   
   next_game = true
